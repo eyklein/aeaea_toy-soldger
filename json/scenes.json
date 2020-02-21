@@ -1,0 +1,350 @@
+{"scenes":[
+    {
+      "name":"intro",
+      "code":"aa",
+      "events":[
+        {
+          "id":"001",
+          "content":
+          {
+            "type":"text-clickable",
+            "value":"Can you tell me story?"
+          },
+          "triger":
+          {
+            "type":"time",
+            "delay-time":0
+          },
+          "targets":[{
+            "type":"click",
+            "id":"002",
+            "delay":0
+          },{
+            "type":"time",
+            "id":"901",
+            "delay":0
+          }
+          ]
+
+        },{
+          "id":"901",
+          "content":
+          {
+            "type":"img-background",
+            "value":"<img src='img/test1.jpg'>",
+            "link":"img/test1.jpg"
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[]
+
+        },
+        {
+          "id":"002",
+          "content":
+          {
+            "type":"text",
+            "value":"<br><br>Okay… So…"
+          },
+          "triger":
+          {
+
+            "type":"passive",
+            "delay-time":3
+          },
+          "targets":
+          [{
+            "type":"time",
+            "id":"003",
+            "delay":1
+          }]
+
+        },
+        {
+          "id":"003",
+          "content":
+          {
+            "type":"text",
+            "value":"<br><br>Once upon a time there was a boy who didn’t want to go to sleep. So his very patient parent told him a story. It was a great story, that was very long,"
+          },
+          "triger":
+          {
+
+            "type":"passive"
+          },
+          "targets":
+          [
+            {          
+              "type":"time",
+              "id":"004",
+              "delay":0
+            }
+          ]
+
+        },
+        {
+          "id":"004",
+          "content":
+          {
+            "type":"text",
+            "value":" and the boy fell asleep."
+          },
+          "triger":
+          {
+
+            "type":"passive"
+          },
+          "targets":
+          [
+            {
+              "type":"time",
+              "id":"005",
+              "delay":2
+            }
+          ]
+
+        },{
+          "id":"005",
+          "content":
+          {
+            "type":"text-clickable",
+            "value":"<br><br>That’s not a story. <br>Tell me a REAL story. <br>Well..."
+          },
+          "triger":
+          {
+
+            "type":"passive"
+          },
+          "targets":
+          [
+            {          
+              "type":"click",
+              "id":"006",
+              "delay":0
+            }
+          ]
+
+        },
+        {
+          "id":"006",
+          "content":
+          {
+            "type":"clear-text",
+            "value":""
+          },
+          "triger":
+          {
+
+            "type":"passive"
+          },
+          "targets":
+          [
+            {          
+              "type":"time",
+              "id":"ba",
+              "delay":0
+            }
+          ]
+
+        }
+      ],
+      "choices":[
+        {
+          "note to self": "this is not necisary as the flow is controled by the events",
+          "name":"real story",
+          "code":"01",
+          "link":"ba"
+        }
+      ]
+    },
+    {
+      "name":"once",
+      "code":"ba",
+      "events":[
+        {
+          "id":"001",
+          "content":
+          {
+            "type":"text",
+            "value":"this is scene #2"
+          },
+          "triger":
+          {
+            "type":"time",
+            "delay-time":0
+          },
+          "targets":[{
+            "type":"time",
+            "id":"102",
+            "delay":3
+          },{
+            "type":"time",
+            "id":"103",
+            "delay":3.5
+          },{
+            "type":"time",
+            "id":"104",
+            "delay":4
+          },{
+            "type":"time",
+            "id":"901",
+            "delay":0
+          }]
+
+        },{
+          "id":"901",
+          "content":
+          {
+            "type":"img-background",
+            "value":"<img src='img/test1.jpg'>",
+            "link":"img/test1.jpg"
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[]
+
+        },{
+          "id":"102",
+          "content":
+          {
+            "type":"text-clickable",
+            "value":"<br>choose 1 ..."
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[{
+            "type":"click",
+            "id":"201",
+            "delay":3
+          }]
+
+        }
+        ,{
+          "id":"103",
+          "content":
+          {
+            "type":"text",
+            "value":"    and    "
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[]
+
+        },{
+          "id":"104",
+          "content":
+          {
+            "type":"text-clickable",
+            "value":"<br>choose 2,"
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[{
+            "type":"click",
+            "id":"202",
+            "delay":3
+          }]
+
+        }
+        ,{
+          "id":"201",
+          "content":
+          {
+            "type":"text",
+            "value":"<br>chose 1"
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[]
+
+        },{
+          "id":"202",
+          "content":
+          {
+            "type":"text",
+            "value":"<br>chose 2"
+          },
+          "triger":
+          {
+            "type":"passive",
+            "delay-time":0
+          },
+          "targets":[]
+
+        }
+      ],
+      "choices":[
+        {
+          "name":"toy soldier",
+          "code":"01",
+          "link":"ca"
+        },
+        {
+          "name":"stuffed corgi",
+          "code":"02",
+          "link":"cb"
+        }
+      ]
+    },
+    {
+      "name":"solder troubles",
+      "code":"ca",
+      "choices":[
+        {
+          "name":"ballerina",
+          "code":"01",
+          "link":"da"
+        },
+        {
+          "name":"race car",
+          "code":"02",
+          "link":"db"
+        }
+      ]
+    },
+    {
+      "name":"ballerina",
+      "code":"da",
+      "choices":[
+        {
+          "name":"norwegian sweater",
+          "code":"01",
+          "link":"ea"
+        },
+        {
+          "name":"ukulele",
+          "code":"02",
+          "link":"eb"
+        }
+      ]
+    },
+    {
+      "name":"norwegian sweater",
+      "code":"ea",
+      "choices":[]
+    },
+    {
+      "name":"ukulele",
+      "code":"eb",
+      "choices":[]
+    }
+  ]
+}

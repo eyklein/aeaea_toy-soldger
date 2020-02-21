@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story Time</title>
+    <script src="js/scene.js"></script>
+    <script src="js/story_teller.js"></script>
+    <script src="js/scenes_display.js"></script>
+    <script src="js/event.js"></script>
+
+    <script src="js/svg_creator.js"></script>
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<div id="top-bar">
+		<button type="button" id="go_to_scene_veiw">Go to Scenes</button>
+
+  		<script type="text/javascript">
+  			document.getElementById("go_to_scene_veiw").addEventListener("click", displayScenes);
+  			document.addEventListener("click",handler,true);
+				function handler(e){
+			    //e.stopPropagation();
+			    e.preventDefault();
+			}
+  		</script>
+	</div>
+
+  	<div id="content">
+
+	  	<div id="background_img" style='position:absolute; z-index:-10;' alt='background image'> </div>
+
+	  	<div id="main_text" style='position:absolute; z-index:0;' alt='text'> </div>
+	</div>
+
+
+  	
+  	
+  	
+
+  	
+
+</body>
+
+
+</html>

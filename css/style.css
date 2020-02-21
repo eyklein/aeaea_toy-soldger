@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'century_gothicregular';
+    src: url('gothic-webfont.woff2') format('woff2'),
+         url('gothic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background-color: #fff;
+  
+   
+    
+  
+}
+#content{
+	min-height: 2000px;
+	top:50px;
+	left:10px;
+	position: absolute;
+	z-index: 100;
+}
+a {
+	color: #aa5543;
+	text-decoration: none;
+}
+div#background_img{
+	left: 0px;
+	top: 0px;
+}
+div#main_text{
+	font-family:'century_gothicregular';
+	font-size: 40px;
+	line-height: 60px;
+	left:100px;
+	top:100px;
+	width: 1320px;
+}
+.text-clickable{
+	background-color:#5c6f91;
+}
+.text{
+	background-color:#a8b8f7;
+}
+.img-background{
+	/*background-color:#d63636;*/
+	/*border-style: groove;*/
+
+}
+.img-background img{
+	width:100%;
+	height:100%;
+}
+.clear-text{
+	background-color:#919191;
+}
+.event-container{
+
+
+	/*white-space: normal;*/
+  /*	overflow: hidden;*/
+  	
+  	position: absolute;
+  	top:0px;
+  	z-index: 50; 
+  	/*transform: rotate(5deg);*/
+
+}
+.event-container:hover{
+	/*position: absolute;*/
+	z-index: 50; 
+
+  	/*transform: rotate(0deg)*/
+
+}
+.event-icon{
+	width:100px;
+	height:75px;
+	overflow: hidden;
+	border-style: groove;
+
+	/*white-space: normal;*/
+  	/*overflow: hidden;
+  	border-style: groove;
+  	position: absolute;
+  	opacity: 60%;
+
+  	z-index: -10; */
+  	opacity: 50%;
+
+	position: absolute;
+
+	z-index: 0; 
+
+  	/*draggable:true;*/
+
+  	/*background: transparent url(../img/transparent.gif) repeat;*/
+}
+.draggable-bar{
+	width: 20px;
+	height: 6px;
+	background: black;
+	position: absolute;
+	left:-10px;
+	opacity: 30%;
+}
+.draggable-bar:hover{
+	cursor:s-resize;
+	opacity: 100%;
+	width: 40px;
+	
+	left:-20px;
+}
+.event-container! >.draggable-bar:hover{
+	width: 400px;
+	height: 400px;
+	background: red;
+}
+/*
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+ /* -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}*/
+
+
+
+.event-icon:hover {
+  	opacity: 100%;
+  	/*position: absolute;*/
+  	/*z-index: 50; 
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;*/
+	position: absolute;
+	/*left:100px;
+	width: 300px;*/
+	/*height: 200px;*/
+	z-index: 50; 
+
+	/*font-size: 20px;*/
+	/*border: groove;*/
+	/*contentEditable:true;*/
+}
+
+
+.connector-line{
+	position: absolute;
+	overflow: scroll;
+	z-index: 98 !important; 
+	stroke-width: 4;
+	pointer-events:none;
+	/*background: green;*/
+	/*stroke: green;*/
+}
+.time-delay{
+	position: absolute;
+}
+.time-delay-text{
+
+	position: absolute;
+	margin: auto;
+	background: rgba(255,255,255,.8);
+	width:50px;
+	z-index: 100; 
+	text-align: right;
+}
+.time-delay-arrow{
+	position: absolute;
+	overflow: scroll;
+	z-index: 97; 
+	stroke-width: 4;
+	/*height: 200px;*/
+	pointer-events:none;
+	stroke: gray;
+	top:0px;
+	left: -20px;
+}
+
+.connector-line .time{
+	stroke: blue;
+}
+.connector-line .click{
+	stroke: red;
+}
+.connector-line .self-driven{
+	stroke: gray;
+	stroke-dasharray:15,5;
+}
+
+.event-content{
+	position: absolute;
+	left:100px;
+	width: 300px;
+	/*height: 200px;*/
+	z-index: 101; 
+	font-size: 20px;
+	border: groove;
+	contentEditable:true;
+
+}
+
+
+
+::selection {
+    color: none;
+    background: none;
+}
+/* For Mozilla Firefox */
+::-moz-selection {
+    color: none;
+    background: none;
+}
+
+/*a {
+  cursor: url(../img/wand-on.png), auto;	
+}
+
+div{
+  cursor: url(../img/wand-off.png), auto;
+}
+*/
